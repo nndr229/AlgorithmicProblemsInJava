@@ -10,6 +10,8 @@ public class QuickSelect {
     }
 
     public int selectRandomElement(int start, int end){
+        //With Random()
+        //return new Random().nextInt(start- end +1) +start;
         return ThreadLocalRandom.current().nextInt(start, end + 1);
     }
 
