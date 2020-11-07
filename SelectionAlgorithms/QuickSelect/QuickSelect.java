@@ -1,9 +1,15 @@
 package QuickSelect;
+
 import java.util.concurrent.ThreadLocalRandom;
+
+//Best case O(n)
+//Worst case for quickSelect O(n**2)
+//Worst case for median quickSelect O(log n)
+
 public class QuickSelect {
     public int[] values;
     public int output;
-    QuickSelect(int[] values,int k){
+    public QuickSelect(int[] values,int k){
         this.values = values;
         this.output = this.select(0, this.values.length-1, k);
         System.out.println(output);
@@ -16,6 +22,7 @@ public class QuickSelect {
     }
 
     public int partition(int indexFirst,int indexLast){
+        //for best performance it is imporatant to choose the median as the pivot
         int pivot = this.selectRandomElement(indexFirst,indexLast);
         this.swap(indexLast,pivot);
 
