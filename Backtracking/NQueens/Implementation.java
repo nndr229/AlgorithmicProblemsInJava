@@ -1,5 +1,6 @@
 package NQueens;
 //Algorithm by  Holczer Balazs
+
 public class Implementation {
     private int[][] chessTable;
     private int numOfQueens;
@@ -59,7 +60,7 @@ public class Implementation {
         }
         
         for (int i=rowIndex,j=columnIndex; i<chessTable.length && j>=0;i++,j-- ){
-            System.out.println(i);
+           
             if(chessTable[i][j]==1)
                 return false;
         }
