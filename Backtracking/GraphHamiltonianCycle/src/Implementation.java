@@ -32,6 +32,7 @@ public class Implementation {
             }
         }
 
+        //check post increment below
         for (int vertexIndex=1; vertexIndex<numOfVertices; ++vertexIndex){
             if(isFeasible(vertexIndex,position)){
                 hamiltonianPath[position] = vertexIndex;
@@ -40,7 +41,8 @@ public class Implementation {
                     return true;
                 }
 
-                //Backtrack
+                //Backtrack => if next is not possible ... 
+                //try abother that is connected to the current vertex index
 
             }
         }
@@ -73,5 +75,3 @@ public class Implementation {
 
 
 }
-
-

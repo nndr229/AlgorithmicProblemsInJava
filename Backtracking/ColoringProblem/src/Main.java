@@ -11,7 +11,8 @@
 //Four colors are sufficient to color any map aka Four Color Theorem.
 
 public class Main {
-
+    //Algorithm by  Holczer Balazs
+    
     public static void main(String[] args) {
 	// write your code here
 

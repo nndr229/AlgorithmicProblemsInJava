@@ -5,6 +5,8 @@
 // If we do not find a color duw to clashes => "WE BACKTRACK !"
 
 public class Implementation {
+    //Algorithm by  Holczer Balazs
+
     private final int numOfVertices;
     private final int numOfColors;
     private final int[] colors;
