@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Backtracking.iml" filepath="$PROJECT_DIR$/Backtracking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GraphHamiltonianCycle/GraphHamiltonianCycle.iml" filepath="$PROJECT_DIR$/GraphHamiltonianCycle/GraphHamiltonianCycle.iml" />
+    </modules>
+  </component>
+</project>
