@@ -63,8 +63,8 @@
 
 // N = 3 (items)  and  W = 5kg  (capacity of the knapsack)
 // item #1       w'1 = 4kg       v'1 = $10
-// item #2       w'1 = 2kg       v'1 = $4
-// item #3       w'1 = 3kg       v'1 = $7
+// item #2       w'2 = 2kg       v'2 = $4
+// item #3       w'3 = 3kg       v'3 = $7
 
 // Number of columns = Capacity + 1
 // Number of rows = Items + 1
@@ -76,7 +76,7 @@
 // First two items      2   |   0       0       4       4       10      10
 //       All Items      3   |   0       0       4       7       10      11
 
-// Fill this table using this => S[i][w] = Math.max( S[i-1][w]  ; v'i + S[i-1][w - w'i] )
+// Fill this table using this => S[i][w] = Math.max( S[i-1][w]  ; v'i + S[i-1][w - w'i] )   {also w >= w'i}
 //      S[2][1] = Math.max( S[1][1] ) ; 4 + S[1][1-2]) = max(0,0)
 //      S[2][2] = Math.max( S[1][1] ) ; 4 + S[1][2-2]) = max(0,4)
 //      Similarly use this formula for all items..
