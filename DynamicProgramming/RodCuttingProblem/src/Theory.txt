@@ -1,7 +1,7 @@
 //Rod Cutting Problem...
 //Given a rod of length "l".
 //Given prices of different lengths.
-//How to cut the rod wo maximise profit ?
+//How to cut the rod to maximise profit ?
 //This is the rod cutting problem.
 
 //Rod length -> l = 5m

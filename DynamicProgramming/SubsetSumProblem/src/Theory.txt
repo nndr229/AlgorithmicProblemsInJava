@@ -1,0 +1,77 @@
+//SUBSET SUM PROBLEM
+// One of the most important problems in complexity theory...
+// Given a non-empty set of integers S, is there a non-empty subset whose sum s is zero or a given integer?
+// Given the set S = {5,2,1,3} and s=9;
+// There is a non empty subset {5,1,3} whose sum is 3.
+// The problem is NP complete!!! i.e. we have an efficient algorithm when the problem is small.
+// Special case of knapsack problem.
+
+
+//NAIVE APPROACH
+// 1. Generate all the subsets of the given integers
+// 2. N is the number of integers in the set S.
+// 3. Check whether the sum of all possible subsets is equal to s or not.
+// COMPLEXITY : O(N * 2^N)
+
+//DYNAMIC PROGRAMMING
+// We want to avoid re-calculation of sub-problems. So we use memoization by creating a Dynamic Programming Table.
+
+
+
+
+//                    |-
+//                    |                    false if (i=0) and true if (j=0) ----(2)
+//    dpTable[i][j] = |             if (dpTable[i-1][j] is true) => dpTable[i][j] = dpTable[i-1][j]; ----(3)
+//        (1)         |                 else => dpTable[i][j] =  dpTable[i-1][j-S[i-1]]  -----(4)
+//                    |-
+
+
+// (1) Above --> There is a non-empty subset of first i integers that sum to j
+// (2) Above --> Base Cases
+// (3) Above --> Include the subset as j can be constructed with i-1 integers
+// (4) Above --> Exclude the subset as (j - actualInteger) can be constructed with i-1 integers
+
+
+//The values in the dpTable will be booleans
+
+// S = set of integers = {5,2,3,1}
+// s = sum = 9
+// Each entry in the table is the sum of the values for the max weight w
+//                      0       1       2       3       4       5       6       7       8       9     sub-sums
+//                 -----------------------------------------------------------------------------------
+//             0   |    T       F       F       F       F       F       F       F       F       F
+//             5   |    T       F       F       F       F       T       F       F       F       F
+//             2   |    T       F       T       F       F       T       F       T       F       F
+//             1   |    T       T       T       T       F       T       T       T       T       F
+//             3   |    T       T       T       T       T       T       T       T       T       T
+//         integers
+
+// The First column 0 is True as we can make an empty sub-set to make the sum 0 ... There is always a trivial
+// ... solution for the problem.
+//                                  dpTable[2][2] = dpTable[1][2-2] = T
+//                                  dpTable[2][3] = dpTable[1][3-2] = F
+//                                                ...
+//                                  dpTable[2][7] = dpTable[1][7-2] = T
+//                                                ...
+//                                  dpTable[2][9] = dpTable[1][9-2] = F
+
+//                                  dpTable[3][3] = dpTable[2][3-1] = T
+
+//                                  dpTable[4][4] = dpTable[4-1][4-3] = T
+//                                               ...
+//                                  dpTable[4][9] = dpTable[4-1][9-3] = T
+
+
+// The last Row , last column index contains true so there is a feasible solution...
+// 9 can be constructed from the S set of integers.
+
+// BUT!!! What are these integers ???
+//Look at a [row][column] (which is a cell) => if the cell above is not the same. Then add the row integer to the sol.
+//Go up that is [row -1][column]...
+//Go left by the last included integer . Here by 3. [row][column - 3]...
+// If the cell above is not the same as the cell below then that integer is not included in the solution set..
+//Compare above and repeat these steps...
+
+
+
+
