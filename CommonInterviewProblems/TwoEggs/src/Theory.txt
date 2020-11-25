@@ -1,0 +1,42 @@
+// There are N number of eggs and a building with M floors.
+// To find => Minimum number of drops that is required to know, the floor from which egg  will break when dropped.
+// Most common version is N=2, M=100
+// Assumptions ...
+// 1) The egg can be reused if it does not break
+// 2) If an egg breaks when dropped from a given floor it will break from a higher floor
+// 3) If an egg does not break when it is dropped from a given floor . It will not break in lower floors.
+
+
+// ONE EGG PROBLEM
+// If we have just one egg we have to try the floors one by one until we reach the floor where the egg breaks.
+// O(M)
+// To find critical floor . I.r find last safe floor we can drop egg wth out breaking it.
+
+// MANY EGGS PROBLEM
+// If number of eggs is Infinity
+// We can use binary search
+// If we have a 100 floor building and an infinite number of eggs we can solve this problem is log(100) ~ 7 STEPS
+
+// 2 EGGS PROBLEM -> 100 Floors
+// We may drop the first egg from the floor n . If it breaks we consider all the floors below one by one. TO FIND
+// THE CRITICAL FLOOR... Otherwise we jump to 2n then 3n.
+// Reducing the worst case means all the cases take the same number of drops.
+
+
+// OPTIMAL STRATEGY
+//Drop the first egg from floor n
+//-> If it breaks we can search through the previous n-1 floors
+//-> Otherwise jump up n floors . But we should take the previous drops into consideration . So jump n-1..then n-2
+//    Finally we consider all the floors so we keep reducing steps ...
+//    n + (n-1) + (n-2) + ... + 1 = 100
+//    n(n+1)/2 = 100
+//    n = 13.7 = 14 drops
+
+
+
+
+
+
+
+
+
