@@ -1,4 +1,6 @@
 AlgorithmicProblemsSlide/
+/!OtherAlgorithmicProblems/BinPacking/src/
+/!OtherAlgorithmicProblems/ClosestPairOfPoints/src/
 /**/**/.idea/
 /**/**/out
 /**/**/*.iml
@@ -8,8 +10,7 @@ AlgorithmicProblemsSlide/
 /!Backtracking/KnightsTourProblem/src/
 /!Backtracking/MazeProblem/src/
 /!Backtracking/Sudoku/src/
-/!OtherAlgorithmicProblems/BinPacking/src/
-/!OtherAlgorithmicProblems/ClosestPairOfPoints/src/
+
 /!DynamicProgramming/**/src/
 /!CommonInterviewProblems/**/src/
 /!SelectionAlgorithms/
