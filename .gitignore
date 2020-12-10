@@ -1,6 +1,5 @@
 AlgorithmicProblemsSlide/
-/!OtherAlgorithmicProblems/BinPacking/src/
-/!OtherAlgorithmicProblems/ClosestPairOfPoints/src/
+/!OtherAlgorithmicProblems/**/src/
 /**/**/.idea/
 /**/**/out
 /**/**/*.iml
