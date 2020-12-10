@@ -1,4 +1,4 @@
 AlgorithmicProblemsSlide/
-/Backtracking/**/.idea
-/Backtracking/**/out
-/Backtracking/**/**.iml
+/**/**/.idea/
+/**/**/out/
+/**/**/
