@@ -1,0 +1,45 @@
+// Closest Pair Of Points Problem
+// Divide and conquer algorithm
+
+// Given an array of points (x,y) in the 2-D plane , find the closest pair of points in the array.
+// We can generalise this problem into higher dimensions.
+// It has several applications -> Air traffic control.
+// We want to stop collisions by preventing planes from coming too close to one another.
+// Brute force approach -> O(N^2) where N is the number of points.
+// Divide and conquer approach might help to achieve O( N * logN) time complexity!
+
+// BRUTE FORCE APPROACH =>
+//
+//  public double bruteForce(List<Point> points){
+//
+//  double minDistance = Double.MAX_VALUE;
+//  for(int i=0; i<points.length; ++j){
+//          for( int j= i+1 ; j<points.length ; ++j){
+//              if(distance(points.get(i),points(j)) < minDistance){
+//                  minDistance = distance(points.get(i), points.get(j));
+//              }
+//          }
+//      }
+//  return minDistance;
+//  }
+
+
+//DIVIDE AND CONQUER APPROACH
+// 1) Sort all points according to the x co-ordinate.
+// 2) Divide all points into 2 subsets with the help of a middleIndex;
+// 3) Find the min. distance recursively in the  two subsets.
+// 4) Calculate the min. of these distances
+//          d = min(d1, d2)
+// 5) Check the neighbourhood of the middle line (strip). There may be points that are closer to each other than...
+//    min(d1,d2). So we get stripMinimum.
+// 6) Find stripMinimum.
+// 7) return min(d,stripMinimum)
+
+
+
+
+
+
+
+
+

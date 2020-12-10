@@ -1,0 +1,35 @@
+//Bin Packing Problem
+
+//The problem is : How to fit several items of v'1,v'2,... volumes into  bins of Volume V such that number of bins used...
+//is minimum.
+
+// Objects of different volumes must be packed into a finite number of bins each of volume V in a way that minimizes...
+// ...the number of bins used.
+
+// It is a NP complete problem.
+// When the number of bins is restricted to one and each item has a volume and value, the problem of maximising the...
+// value of items that can fit into the bin is called Knapsack problem.
+
+// 3 ways to solve this Bin-Packing Problem...
+
+//  1) Naive Approach ... Brute force search.
+//        : Iterate over all bins . Try to put the current item in the bin. If it fits call the same method with
+//          the next item.
+
+//  2) First-fit algorithm.
+//        : Iterate over all items you want to put into bins -> If we are not able to put it into a given bin,
+//          we try to put it into the next one.
+//        : Yields non-optimal solutions
+
+//  3) First-fit decreasing algorithm.
+//        : Sort the items in decreasing order. After sorting use the first-fit algorithm.
+//        : Yields non-optimal solutions
+
+//Applications
+// We have N groups of people with sizes w1 ,w2 ,... ,wN. We have mini-buses with capacity C.
+// What is the optimal number of minibuses when the groups should stay together?
+
+// Virtual machines often have to solve this problem.
+
+// TV , YT ,Netflix... ads. we are given a certain time slot like 1 min. How do we pack the most commercials
+// into each time slot and maximize out profit?
