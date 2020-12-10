@@ -3,5 +3,13 @@ AlgorithmicProblemsSlide/
 /**/**/out
 /**/**/*.iml
 /!Backtracking/**/src/
+/!Backtracking/ColoringProblem/src/
+/!Backtracking/GraphHamiltonian/src/
+/!Backtracking/KnightsTourProblem/src/
+/!Backtracking/MazeProblem/src/
+/!Backtracking/Sudoku/src/
+/!OtherAlgorithmicProblems/BinPacking/src/
+/!OtherAlgorithmicProblems/ClosestPairOfPoints/src/
 /!DynamicProgramming/**/src/
 /!CommonInterviewProblems/**/src/
+/!SelectionAlgorithms/
