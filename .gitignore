@@ -1,5 +1,5 @@
 AlgorithmicProblemsSlide/
-/!OtherAlgorithmicProblems/**/src/
+
 /**/**/.idea/
 /**/**/out
 /**/**/*.iml
@@ -9,7 +9,7 @@ AlgorithmicProblemsSlide/
 /!Backtracking/KnightsTourProblem/src/
 /!Backtracking/MazeProblem/src/
 /!Backtracking/Sudoku/src/
-
+/!OtherAlgorithmicProblems/**/src/
 /!DynamicProgramming/**/src/
 /!CommonInterviewProblems/**/src/
 /!SelectionAlgorithms/
