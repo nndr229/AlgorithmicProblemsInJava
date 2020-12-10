@@ -2,4 +2,6 @@ AlgorithmicProblemsSlide/
 /**/**/.idea/
 /**/**/out
 /**/**/*.iml
-/!Backtracking/src/
+/!Backtracking/**/src/
+/!DynamicProgramming/**/src/
+/!CommonInterviewProblems/**/src/
